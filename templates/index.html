@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  
+
+<div class="box">
+
+  <div class="title">
+    <h3>Heatmap Generator</h3>
+  <hr/>
+</div>
+
+  <form  enctype=multipart/form-data  action="/download" method="post" id="signup">
+    
+    <br>
+
+    <div class="input-data" style="display:inline;">
+      <input type="text" name="plotTitle" id="plotTitle" required> 
+      <div class="underline"></div>
+      <label>Plot Title</label>
+    </div>
+    <br><br>
+
+    <div class="input-data" style="display:inline;">
+      <input type="text" name="xAxis" id="xAxis" required>
+      <div class="underline"></div>
+      <label>X axis</label>
+    </div>
+    <br><br>
+    <div class="input-data" style="display:inline;">
+      <input type="text" name="yAxis" id="yAxis"  required>
+      <div class="underline"></div>
+      <label>Y axis</label>
+    </div>
+    <br><br>
+
+    <div class="input-data" style="display:inline;">
+      <input type="text" name="val" id="val" required>
+      <div class="underline"></div>
+      <label>Value Measured</label>
+    </div>
+    <br><br>
+
+    <br><br>
+    <label for="file">CSV file:</label>
+    <input type="file" id="file" name="file" accept=".csv" required>
+    <br><br><br>
+    <input type="submit" value="submit" class="continue">
+    <br>
+  </form>
+
+      <br><br>
+</div>
+{% endblock %}

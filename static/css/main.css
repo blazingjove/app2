@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+}
+
+body {
+  background-color: rgb(177, 177, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.title h3 {
+  text-align: center;
+  font-size: 80px;
+  font-family: "adobe clean", sans-serif;
+}
+
+.title hr {
+  width: 350;
+  height: 12px;
+  background-color: #5b4b8a2c;
+
+  text-align: right;
+  justify-content: right;
+  margin: -15px auto 40px auto;
+  border-radius: 100px;
+}
+
+.box {
+  background-color: #ffffff;
+  width: 95vh;
+  max-width: 900px;
+  padding: 60px;
+  border-radius: 10px;
+  margin: 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box .input-data {
+  height: 40px;
+  width: 60%;
+  position: relative;
+}
+
+.box .input-data input {
+  width: 60%;
+  height: 100%;
+  font-size: 24px;
+  border: none;
+  border-bottom: 2px solid rgba(192, 192, 192, 0.514);
+  font-weight: 450;
+}
+
+.input-data input:focus ~ label,
+.input-data input:valid ~ label {
+  transform: translateY(-23px);
+  color: #5b4b8a;
+  font-size: 19px;
+}
+
+.box .input-data label {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: rgb(177, 177, 177);
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.box .input-data .underline {
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  width: 100%;
+}
+
+.input-data .underline::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #5b4b8a;
+  transform: scaleX(0);
+  transition: 0.2s;
+}
+
+.input-data input:focus ~ .underline::before,
+.input-data input:valid ~ .underline::before {
+  transform: scaleX(1);
+}
+
+.continue {
+  border: 1px solid transparent;
+  width: 100%;
+  padding: 10px;
+  border-radius: 200px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #5b4b8a;
+  font-weight: 700;
+  font-size: 50px;
+  border: 10px solid transparent;
+}
+
+.continue:hover {
+  background-color: #ffffff;
+  border-color: #5b4b8a;
+  color: #5b4b8a;
+  transition: 0.3s;
+  font-weight: 700;
+}
+
