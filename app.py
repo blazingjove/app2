@@ -18,7 +18,7 @@ def index():
     return render_template("index.html")
 
 #page where uploaded file is stored and processed
-@app.route("/download", methods=['POST'])
+@app.route("/download", methods=['POST','GET'])
 def download():
     #assignt all user provided imputs to variables, using same variables names for readability
     yAxis = request.form.get("yAxis")
