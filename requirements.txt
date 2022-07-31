@@ -3,4 +3,3 @@ seaborn
 pandas
 pylance
 werkzeug.utils
-werkzeug
