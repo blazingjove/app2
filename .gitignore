@@ -1,1 +1,5 @@
 __pycache__/app.cpython-310.pyc
+__pycache__
+upload/foo.csv
+upload/foo.png
+upload/foo.pdf
