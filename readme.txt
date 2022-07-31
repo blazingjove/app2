@@ -2,6 +2,6 @@ Base code for generating a heat map, only handles one user at a time as the prog
 
 todo
 
-making a guide on how to operate
-add other plotting methos for processing data from seaborn
-
+adding some code to html to guide user on how to use the program
+add other plotting methods for processing data from seaborn
+allow user to modify the colors of the plot
