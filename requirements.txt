@@ -1,5 +1,1 @@
 flask
-seaborn
-pandas
-pylance
-werkzeug.utils
