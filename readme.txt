@@ -5,3 +5,4 @@ todo
 adding some code to html to guide user on how to use the program
 add other plotting methods for processing data from seaborn
 allow user to modify the colors of the plot
+*Unable to deploy on glitch as origionally intended as requirement files are too large (exceed 500mb)
