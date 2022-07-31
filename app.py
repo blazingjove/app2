@@ -1,4 +1,3 @@
-from distutils.command.upload import upload
 from flask import Flask, render_template, request, redirect
 import os
 from werkzeug.utils import secure_filename
